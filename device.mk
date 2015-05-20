@@ -167,6 +167,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.radio.sib16_support=1 \
     persist.data.qmi.adb_logmask=0
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.isUsbOtgEnabled=1
+
 # Audio effects
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
