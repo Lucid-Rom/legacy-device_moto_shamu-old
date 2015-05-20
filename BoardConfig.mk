@@ -21,6 +21,9 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 
+# Enable bionic optimization
+TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
+
 # Toolchain Overrides
 TARGET_GCC_VERSION_EXP := UB-4.9
 TARGET_GCC_VERSION_ARM := UB-6.0
