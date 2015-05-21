@@ -38,3 +38,5 @@ PRODUCT_NAME := aosp_shamu
 PRODUCT_PACKAGES += \
     Launcher3
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.lcd_density=480
