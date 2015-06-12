@@ -19,12 +19,46 @@
 #
 # Everything in this directory will become public
 
+#PRODUCT_COPY_FILES += \
+#    device/moto/shamu/init.shamu.rc:root/init.shamu.rc \
+#    device/moto/shamu/init.shamu.power.rc:root/init.shamu.power.rc \
+#    device/moto/shamu/init.shamu.usb.rc:root/init.shamu.usb.rc \
+#    device/moto/shamu/fstab.shamu:root/fstab.shamu \
+#    device/moto/shamu/ueventd.shamu.rc:root/ueventd.shamu.rc
+
+# Ramdisk files
 PRODUCT_COPY_FILES += \
-    device/moto/shamu/init.shamu.rc:root/init.shamu.rc \
-    device/moto/shamu/init.shamu.power.rc:root/init.shamu.power.rc \
-    device/moto/shamu/init.shamu.usb.rc:root/init.shamu.usb.rc \
-    device/moto/shamu/fstab.shamu:root/fstab.shamu \
-    device/moto/shamu/ueventd.shamu.rc:root/ueventd.shamu.rc
+    device/moto/shamu/root/default.prop:root/default.prop \
+    device/moto/shamu/root/file_contexts:root/file_contexts \
+    device/moto/shamu/root/fstab.shamu:root/fstab.shamu \
+    device/moto/shamu/root/init:root/init \
+    device/moto/shamu/root/init.cm.rc:root/init.cm.rc \
+    device/moto/shamu/root/init.custom.rc:root/init.custom.rc \
+    device/moto/shamu/root/init.environ.rc:root/init.environ.rc \
+    device/moto/shamu/root/init.lk.rc:root/init.lk.rc \
+    device/moto/shamu/root/init.rc:root/init.rc \
+    device/moto/shamu/root/init.shamu.diag.rc:root/init.shamu.diag.rc \
+    device/moto/shamu/root/init.shamu.power.rc:root/init.shamu.power.rc \
+    device/moto/shamu/root/init.shamu.rc:root/init.shamu.rc \
+    device/moto/shamu/root/init.shamu.usb.rc:root/init.shamu.usb.rc \
+    device/moto/shamu/root/init.superuser.rc:root/init.superuser.rc \
+    device/moto/shamu/root/property_contexts:root/property_contexts \
+    device/moto/shamu/root/seapp_contexts:root/seapp_contexts \
+    device/moto/shamu/root/selinux_version:root/selinux_version \
+    device/moto/shamu/root/sepolicy:root/sepolicy \
+    device/moto/shamu/root/service_contexts:root/service_contexts \
+    device/moto/shamu/root/ueventd.rc:root/ueventd.rc \
+    device/moto/shamu/root/sbin/adbd:root/sbin/adbd \
+    device/moto/shamu/root/sbin/healthd:root/sbin/healthd \
+    device/moto/shamu/root/sbin/lk:root/sbin/lk \
+    device/moto/shamu/root/sbin/lkconfig:root/sbin/lkconfig \
+    device/moto/shamu/root/sbin/lk-early-boot.sh:root/sbin/lk-early-boot.sh \
+    device/moto/shamu/root/sbin/lk-post-boot.sh:root/sbin/lk-post-boot.sh \
+    device/moto/shamu/root/sbin/nofreq-mpd:root/sbin/nofreq-mpd \
+    device/moto/shamu/root/sbin/stock-mpd:root/sbin/stock-mpd \
+    device/moto/shamu/root/sbin/supolicy:root/sbin/supolicy \
+    device/moto/shamu/root/sbin/ueventd:root/sbin/ueventd \
+    device/moto/shamu/root/sbin/watchdogd:root/sbin/watchdogd
 
 # Input device files for shamu
 PRODUCT_COPY_FILES += \
