@@ -40,3 +40,6 @@ PRODUCT_PACKAGES += \
 
 #PRODUCT_PROPERTY_OVERRIDES += \
 #    persist.sys.lcd_density=480
+
+# Ramdisk files
+$(shell cp -R $(LOCAL_PATH)/root/* $(TARGET_OUT)/root)
